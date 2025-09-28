@@ -5,7 +5,7 @@ pipeline {
     stage ('Build') {
       steps {
         // echo 'First step towards pipeline project'/
-        mv clean package
+        mvn clean package
       }
 
       post {
